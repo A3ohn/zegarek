@@ -1,12 +1,15 @@
 body {
   background-color: #f7f7f7;
   font-family: "Lemon/Milk", sans-serif;
+  margin: 0;
 }
 body nav {
-  border: 2px dashed red;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+  padding: 2rem 2rem 0.5rem 2rem;
+  border-bottom: 2px solid #000;
 }
 body nav .logoWrapper {
   display: flex;
@@ -62,4 +65,11 @@ body nav .burgerWrapper ol {
 }
 body nav .burgerWrapper input {
   display: none;
+}
+body nav .burgerWrapper #toggler:checked ~ ol {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */

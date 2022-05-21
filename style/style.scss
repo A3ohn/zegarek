@@ -2,83 +2,105 @@ $navButtonSize: 2rem;
 
 body {
     background-color: #f7f7f7;
-    font-family: 'Lemon/Milk',sans-serif;
+    font-family: 'Lemon/Milk', sans-serif;
     //font-family: 'Lemon/Milk light ',sans-serif;
+    margin: 0;
 
     nav {
-        border: 2px dashed red;
+        // border: 2px dashed red;
         display: flex;
         justify-content: space-between;
-        position:relative;
+        padding:2rem;
+        padding-bottom: .5rem;
+        padding: 2rem 2rem .5rem 2rem;
+        border-bottom:2px solid#000;
+
         .logoWrapper {
-            display:flex;
-            align-items: center;
-            img{
-                width:$navButtonSize;
-                height:$navButtonSize;
-                margin:.7rem;
-            }
-            h1{
-                font-size:1.2rem;
-               
-            }
             display: flex;
-        }
-        .burgerWrapper {
-            display:flex;
-            position: relative;
             align-items: center;
-            margin-right:.7rem;
-            
-            label{
-                right:0;
+
+            img {
                 width: $navButtonSize;
                 height: $navButtonSize;
-                position:absolute;
-                cursor:pointer;
-                > div{
-                  $barHeight:6px;
-                  height:$barHeight;
-                  background-color: #000;
-                  position:absolute;
-                  width:100%;
-                  &:nth-child(2){
-                    top: calc($navButtonSize / 2 - $barHeight / 2);
-                  }
-                  &:nth-child(3){
-                    bottom:0;
-                    display:flex;
-                    background-color: transparent;
-                    justify-content:space-between;
-                    div:nth-child(1){
-                      background-color: #000;
-                      width:60%;
+                margin: .7rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+
+            }
+
+            display: flex;
+        }
+
+        .burgerWrapper {
+            display: flex;
+            position: relative;
+            align-items: center;
+            margin-right: .7rem;
+
+            label {
+                right: 0;
+                width: $navButtonSize;
+                height: $navButtonSize;
+                position: absolute;
+                cursor: pointer;
+
+                >div {
+                    $barHeight: 6px;
+                    height: $barHeight;
+                    background-color: #000;
+                    position: absolute;
+                    width: 100%;
+
+                    &:nth-child(2) {
+                        top: calc($navButtonSize / 2 - $barHeight / 2);
                     }
-                    div:nth-child(2){
-                      width:20%;
-                      background-color:orange;
+
+                    &:nth-child(3) {
+                        bottom: 0;
+                        display: flex;
+                        background-color: transparent;
+                        justify-content: space-between;
+
+                        div:nth-child(1) {
+                            background-color: #000;
+                            width: 60%;
+                        }
+
+                        div:nth-child(2) {
+                            width: 20%;
+                            background-color: orange;
+                        }
+
                     }
-                  
-                  }
-        
-        
+
+
                 }
-        
-        
-              }
+
+
+            }
 
 
 
             ol {
                 display: none;
             }
-            input{
-                display:none;
+            input {
+                display: none;
             }
+            
+            #toggler:checked ~ {
+            ol{
+                display:flex;
+                flex-direction:column;
+                position:absolute;
+                top:100%;
+                right:0;
+            }
+
+        }
+
         }
     }
-
-
-
-
 }
