@@ -65,9 +65,9 @@ body nav .burgerWrapper label > div:nth-child(3) div:nth-child(2) {
   background-color: orange;
 }
 body nav .burgerWrapper ol {
-  display: none;
   position: absolute;
   top: -100vh;
+  transition: 0.5s;
 }
 body nav .burgerWrapper input {
   display: none;
@@ -76,11 +76,11 @@ body nav .burgerWrapper #toggler:checked ~ ol {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 100%;
   right: 0rem;
   border: 5px dashed red;
   width: 100px;
   padding: 20;
   width: 97vw;
   list-style: none;
+  top: 100%;
 }/*# sourceMappingURL=style.css.map */
