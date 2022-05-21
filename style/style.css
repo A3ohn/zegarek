@@ -1,3 +1,18 @@
 body {
-  background-color: #e7e0e0;
+  background-color: #ece3e3;
+}
+body nav {
+  border: 2px dashed red;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .logoWrapper {
+  border: 2px dashed blue;
+  display: flex;
+}
+body nav .burgerWrapper {
+  border: 2px dashed green;
+}
+body nav .burgerWrapper ol {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
