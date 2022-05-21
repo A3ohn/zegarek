@@ -66,6 +66,8 @@ body nav .burgerWrapper label > div:nth-child(3) div:nth-child(2) {
 }
 body nav .burgerWrapper ol {
   display: none;
+  position: absolute;
+  top: -100vh;
 }
 body nav .burgerWrapper input {
   display: none;

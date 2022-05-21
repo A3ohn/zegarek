@@ -1,5 +1,9 @@
 $navButtonSize: 2rem;
-*{box-sizing:border-box}
+
+* {
+    box-sizing: border-box
+}
+
 body {
     background-color: #f7f7f7;
     font-family: 'Lemon/Milk', sans-serif;
@@ -10,10 +14,10 @@ body {
         // border: 2px dashed red;
         display: flex;
         justify-content: space-between;
-        padding:2rem;
+        padding: 2rem;
         padding-bottom: .5rem;
         padding: 2rem 2rem .5rem 2rem;
-        border-bottom:2px solid#000;
+        border-bottom: 2px solid#000;
 
         .logoWrapper {
             display: flex;
@@ -85,26 +89,29 @@ body {
 
             ol {
                 display: none;
+                position: absolute;
+                top: -100vh;
             }
+
             input {
                 display: none;
             }
-            
-            #toggler:checked ~ {
-            ol{
-                display:flex;
-                flex-direction:column;
-                position:absolute;
-                top:100%;
-                right:0rem;
-                border: 5px dashed red;
-                width:100px;
-                padding:20;
-                width: 97vw;
-                list-style: none;
-            }
 
-        }
+            #toggler:checked~ {
+                ol {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 100%;
+                    right: 0rem;
+                    border: 5px dashed red;
+                    width: 100px;
+                    padding: 20;
+                    width: 97vw;
+                    list-style: none;
+                }
+
+            }
 
         }
     }
