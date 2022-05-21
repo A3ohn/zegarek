@@ -104,8 +104,8 @@ body {
             #toggler:checked~ {
                 ol {
                     display: flex;
-                    flex-direction: column;
                     position: absolute;
+                    flex-direction: column;
                     right: 0rem;
                     // border: 5px dashed red;
                     width: 100px;

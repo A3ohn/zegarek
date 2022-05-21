@@ -76,8 +76,8 @@ body nav .burgerWrapper input {
 }
 body nav .burgerWrapper #toggler:checked ~ ol {
   display: flex;
-  flex-direction: column;
   position: absolute;
+  flex-direction: column;
   right: 0rem;
   width: 100px;
   padding: 20;
