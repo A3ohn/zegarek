@@ -80,7 +80,7 @@ body nav .burgerWrapper #toggler:checked ~ ol {
   flex-direction: column;
   right: 0rem;
   width: 100px;
-  padding: 20;
+  padding: 20px 10px;
   width: 97vw;
   list-style: none;
   top: 100%;
