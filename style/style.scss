@@ -6,6 +6,8 @@ $globalPadding: 2.7rem;
 $border:2px solid#000;
 
 body {
+    z-index:-3;
+    position: relative;
     background-color: #f7f7f7;
     font-family: 'Lemon/Milk', sans-serif;
     //font-family: 'Lemon/Milk light ',sans-serif;
@@ -83,7 +85,7 @@ body {
 
                         div:nth-child(2) {
                             width: 20%;
-                            background-color: rgb(255, 0, 0);
+                            background-color: #FE682F
                         }
 
                     }
@@ -157,9 +159,57 @@ main {
             font-size:2rem;
             margin-top:0;
         }
+        p{
+            font-family: 'Lemon/Milk light ',sans-serif;
+            margin: 2rem 0;
+        }
+        button{display:none;}
+        b{font-size:2rem;}
     }
     .imgContainer{
         border-top:$border;
+        .imgWrapper{
+            background-color:rgb(189, 33, 33);
+            margin:0  $globalPadding;
+            border-left:$border;
+            border-right:$border;
+            .img{
+                border:2px dashed red;
+                min-height:80vh;
+                background-image: url(../img/man-is-putting-watch-his-wrist\ 1.webp);
+                background-size:cover;
+                background-position:center;
+                border-radius:50vw;
+            }
+        }
+    }
+    .contentContainer{
+        .buttonContainer{
+            
+            button{
+            border-radius: 0;
+            padding:1.5rem 2.5rem;
+            background-color: #FE682F;
+            border:$border;
+            position:relative;
+            &:after{
+                content: '';
+                border:$border;
+                position:absolute;
+                width:100%;
+                height:100%;
+                background-color: white;
+                top:.5rem;
+                left:.5rem;
+                z-index:-1;
+            }
+            &:active{
+                top:1rem;
+                left:1rem;
+            }
+            }
+            border:2px dashed red;
+        }
     }
 }
 }

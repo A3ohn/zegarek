@@ -3,6 +3,8 @@
 }
 
 body {
+  z-index: -3;
+  position: relative;
   background-color: #f7f7f7;
   font-family: "Lemon/Milk", sans-serif;
   margin: 0;
@@ -65,7 +67,7 @@ body nav .burgerWrapper label > div:nth-child(3) div:nth-child(1) {
 }
 body nav .burgerWrapper label > div:nth-child(3) div:nth-child(2) {
   width: 20%;
-  background-color: rgb(255, 0, 0);
+  background-color: #FE682F;
 }
 body nav .burgerWrapper ol {
   z-index: -1;
@@ -123,6 +125,55 @@ body main .titleWrapper h2 {
   font-size: 2rem;
   margin-top: 0;
 }
+body main .titleWrapper p {
+  font-family: "Lemon/Milk light ", sans-serif;
+  margin: 2rem 0;
+}
+body main .titleWrapper button {
+  display: none;
+}
+body main .titleWrapper b {
+  font-size: 2rem;
+}
 body main .imgContainer {
   border-top: 2px solid #000;
+}
+body main .imgContainer .imgWrapper {
+  background-color: rgb(189, 33, 33);
+  margin: 0 2.7rem;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+body main .imgContainer .imgWrapper .img {
+  border: 2px dashed red;
+  min-height: 80vh;
+  background-image: url(../img/man-is-putting-watch-his-wrist\ 1.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50vw;
+}
+body main .contentContainer .buttonContainer {
+  border: 2px dashed red;
+}
+body main .contentContainer .buttonContainer button {
+  border-radius: 0;
+  padding: 1.5rem 2.5rem;
+  background-color: #FE682F;
+  border: 2px solid #000;
+  position: relative;
+}
+body main .contentContainer .buttonContainer button:after {
+  content: "";
+  border: 2px solid #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+}
+body main .contentContainer .buttonContainer button:active {
+  top: 1rem;
+  left: 1rem;
 }/*# sourceMappingURL=style.css.map */
