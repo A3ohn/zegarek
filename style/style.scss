@@ -3,6 +3,7 @@ $bgColor:blue;
 *{box-sizing:border-box;}
 $barHeight: 6px;
 $globalPadding: 2.7rem;
+$border:2px solid#000;
 
 body {
     background-color: #f7f7f7;
@@ -19,7 +20,7 @@ body {
         padding: 2rem;
         padding-bottom: .5rem;
         padding: 2rem 2rem .5rem 2rem;
-        border-bottom: 2px solid#000;
+        border-bottom:$border;
 
         .logoWrapper {
             display: flex;
@@ -148,5 +149,17 @@ body {
 main {
     position:relative;
     z-index:-2;
+    .titleWrapper{
+        border-left:$border;
+        margin-left:$globalPadding;
+        padding:1rem 2rem 3rem .7rem;
+        h2{
+            font-size:2rem;
+            margin-top:0;
+        }
+    }
+    .imgContainer{
+        border-top:$border;
+    }
 }
 }
