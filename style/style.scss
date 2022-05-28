@@ -1,8 +1,7 @@
 $navButtonSize: 2rem;
-
-* {
-    box-sizing: border-box
-}
+$bgColor:blue;
+*{box-sizing:border-box;}
+$barHeight: 6px;
 
 body {
     background-color: #f7f7f7;
@@ -54,7 +53,7 @@ body {
                 cursor: pointer;
 
                 >div {
-                    $barHeight: 6px;
+                    transition: .5s;
                     height: $barHeight;
                     background-color: #000;
                     position: absolute;
@@ -82,7 +81,7 @@ body {
 
                         div:nth-child(2) {
                             width: 20%;
-                            background-color: rgb(229, 255, 0);
+                            background-color: rgb(255, 0, 0);
                         }
 
                     }
@@ -96,14 +95,16 @@ body {
 
 
             ol {
+                z-index:-1;
+                background-color: rgb(228, 33, 33);
                 display: flex;
                 position: absolute;
                 flex-direction: column;
                 right: -2rem;
-                // border: 5px dashed red;
-                // width: 100px;
                 padding: 20px 10px;
-                width: 97vw;
+                border:2px solid rgb(0, 0, 0);
+                margin:0;
+                width: 100vw;
                 list-style: none;
                 transition: .5s;
                 top:-100vh;
@@ -111,16 +112,34 @@ body {
 
             input {
                 display: none;
-                
             }
-
-            #toggler:checked~ {
+            //
+            #toggler:checked ~ {
                 ol {
                     top: 100%;
                 }
+                label > div {
+                    top: calc($navButtonSize / 2 - $barHeight / 2);
+                    &:nth-child(1){
+                        transform:rotate(45deg);
+                        transition: .5s;
+                    }
+                    &:nth-child(2){
+                        opacity:0;
+                    }
+                    &:nth-child(3){
+                        transform:rotate(-45deg);
+                        transition: .5s;
+                        
+                        div:nth-child(1){display:none;}
+                        background-color:black;
+                        justify-content: center;
+                    }
+                    
+
+                }
 
             }
-
         }
     }
 }
