@@ -185,7 +185,8 @@ main {
     }
     .contentContainer{
         .buttonContainer{
-            
+            text-align: center;
+            padding:$globalPadding 0;
             button{
             border-radius: 0;
             padding:1.5rem 2.5rem;
@@ -195,20 +196,33 @@ main {
             &:after{
                 content: '';
                 border:$border;
-                position:absolute;
                 width:100%;
                 height:100%;
                 background-color: white;
                 top:.5rem;
                 left:.5rem;
                 z-index:-1;
+                position:absolute;
             }
             &:active{
                 top:1rem;
                 left:1rem;
+                &:after{
+                    top:0;
+                    left:0;
+                }
             }
             }
-            border:2px dashed red;
+        }
+        .imgWrapper{
+            .img{
+                border:2px dashed black;
+                min-height: 60vh;
+                background-image: url(../img/businessman-checking-time.webp);
+                background-position: center;
+                background-size: cover;
+                border:$border;
+            }
         }
     }
 }

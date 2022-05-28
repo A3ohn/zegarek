@@ -153,7 +153,8 @@ body main .imgContainer .imgWrapper .img {
   border-radius: 50vw;
 }
 body main .contentContainer .buttonContainer {
-  border: 2px dashed red;
+  text-align: center;
+  padding: 2.7rem 0;
 }
 body main .contentContainer .buttonContainer button {
   border-radius: 0;
@@ -165,15 +166,27 @@ body main .contentContainer .buttonContainer button {
 body main .contentContainer .buttonContainer button:after {
   content: "";
   border: 2px solid #000;
-  position: absolute;
   width: 100%;
   height: 100%;
   background-color: white;
   top: 0.5rem;
   left: 0.5rem;
   z-index: -1;
+  position: absolute;
 }
 body main .contentContainer .buttonContainer button:active {
   top: 1rem;
   left: 1rem;
+}
+body main .contentContainer .buttonContainer button:active:after {
+  top: 0;
+  left: 0;
+}
+body main .contentContainer .imgWrapper .img {
+  border: 2px dashed black;
+  min-height: 60vh;
+  background-image: url(../img/businessman-checking-time.webp);
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #000;
 }/*# sourceMappingURL=style.css.map */
