@@ -2,6 +2,7 @@ $navButtonSize: 2rem;
 $bgColor:blue;
 *{box-sizing:border-box;}
 $barHeight: 6px;
+$globalPadding: 2.7rem;
 
 body {
     background-color: #f7f7f7;
@@ -142,4 +143,10 @@ body {
             }
         }
     }
+
+
+main {
+    position:relative;
+    z-index:-2;
+}
 }

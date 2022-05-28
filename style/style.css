@@ -109,4 +109,8 @@ body nav .burgerWrapper #toggler:checked ~ label > div:nth-child(3) div:nth-chil
 }
 body nav .burgerWrapper #toggler:checked ~ label > div:nth-child(3) div:nth-child(2) {
   background-color: white;
+}
+body main {
+  position: relative;
+  z-index: -2;
 }/*# sourceMappingURL=style.css.map */
