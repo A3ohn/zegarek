@@ -106,4 +106,7 @@ body nav .burgerWrapper #toggler:checked ~ label > div:nth-child(3) {
 }
 body nav .burgerWrapper #toggler:checked ~ label > div:nth-child(3) div:nth-child(1) {
   display: none;
+}
+body nav .burgerWrapper #toggler:checked ~ label > div:nth-child(3) div:nth-child(2) {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
