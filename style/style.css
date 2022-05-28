@@ -152,6 +152,12 @@ body main .imgContainer .imgWrapper .img {
   background-position: center;
   border-radius: 50vw;
 }
+body main .contentContainer {
+  margin: 0 2.7rem;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  padding: 0 1rem;
+}
 body main .contentContainer .buttonContainer {
   text-align: center;
   padding: 2.7rem 0;
@@ -189,4 +195,14 @@ body main .contentContainer .imgWrapper .img {
   background-position: center;
   background-size: cover;
   border: 2px solid #000;
+}
+body main .trendingWrapper {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+body main .trendingWrapper .trending {
+  background-color: yellow;
+  margin: 2.7rem;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
 }/*# sourceMappingURL=style.css.map */

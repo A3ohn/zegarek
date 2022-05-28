@@ -184,6 +184,10 @@ main {
         }
     }
     .contentContainer{
+        margin:0 $globalPadding;
+            border-right:$border;
+            border-left:$border;
+            padding:0 1rem;  
         .buttonContainer{
             text-align: center;
             padding:$globalPadding 0;
@@ -225,5 +229,17 @@ main {
             }
         }
     }
+           
+    .trendingWrapper{
+        border-top:$border;
+        border-bottom:$border;
+        .trending{
+            background-color: yellow;
+            margin:$globalPadding;
+            border-left: $border;
+            border-right:$border;
+                }
+
+        }
 }
 }
