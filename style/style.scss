@@ -43,9 +43,10 @@ body {
             display: flex;
             position: relative;
             align-items: center;
-            margin-right: -.7rem;
+            // margin-right: -.7rem;
 
             label {
+                margin-right: .7rem;
                 right: 0;
                 width: $navButtonSize;
                 height: $navButtonSize;
@@ -58,8 +59,13 @@ body {
                     background-color: #000;
                     position: absolute;
                     width: 100%;
-
+                     //& - odnosi się do tego selektora
+                    // wewnątrz którego się znajduje
+                    
                     &:nth-child(2) {
+                        // połowa labela - jego wysokość/2
+                        // = $navButtonSize/2
+                        // top: calc($navButtonSize / 2);
                         top: calc($navButtonSize / 2 - $barHeight / 2);
                     }
 
@@ -76,7 +82,7 @@ body {
 
                         div:nth-child(2) {
                             width: 20%;
-                            background-color: orange;
+                            background-color: rgb(229, 255, 0);
                         }
 
                     }
@@ -90,10 +96,17 @@ body {
 
 
             ol {
-                // display: none;
+                display: flex;
                 position: absolute;
-                top: -100vh;
+                flex-direction: column;
+                right: -2rem;
+                // border: 5px dashed red;
+                // width: 100px;
+                padding: 20px 10px;
+                width: 97vw;
+                list-style: none;
                 transition: .5s;
+                top:-100vh;
             }
 
             input {
@@ -103,15 +116,6 @@ body {
 
             #toggler:checked~ {
                 ol {
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column;
-                    right: 0rem;
-                    // border: 5px dashed red;
-                    width: 100px;
-                    padding: 20px 10px;
-                    width: 97vw;
-                    list-style: none;
                     top: 100%;
                 }
 
