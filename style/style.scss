@@ -7,6 +7,7 @@ $lightFont:'Lemon/Milk light ',sans-serif;
 $defaultFont:'Lemon/Milk', sans-serif;
 *{box-sizing:border-box;}
 button{
+    cursor:alias;
     border-radius: 0;
     padding:1.5rem 2.5rem;
     background-color: #FE682F;
@@ -297,8 +298,9 @@ nav{
 }
 main{
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     margin:0 6rem;
+    margin-bottom:4rem;
     .titleWrapper{
         padding: 3rem 2rem 4rem 3rem !important;
         margin:0 !important;
@@ -333,6 +335,42 @@ main{
             .img{
                 min-height:100% !important;
             }
+        }
+    }
+    .contentContainer{
+        margin:0 !important;
+        padding:0 !important;
+        display:flex;
+        border-bottom:$border;
+        border-right:none !important;
+        .buttonContainer{
+            display:none;
+        }
+        .imgWrapper{
+            flex:1;
+            .img{
+                min-height: 100% !important;
+                border: none !important;
+            }
+        }
+        .contentWrapper{
+            flex:3;
+            padding:2rem 3rem;
+            font-family: $lightFont;
+            font-size:1.5rem;
+            p{
+                text-align: left !important;
+            }
+            
+        }
+    }
+
+    .trendingWrapper{
+        border-top:none !important;
+        .trending{
+            margin:0 !important;
+            border-left:none !important;
+            align-items: center;
         }
     }
 }

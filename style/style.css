@@ -3,6 +3,7 @@
 }
 
 button {
+  cursor: alias;
   border-radius: 0;
   padding: 1.5rem 2.5rem;
   background-color: #FE682F;
@@ -258,8 +259,9 @@ nav .button {
 
   main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     margin: 0 6rem;
+    margin-bottom: 4rem;
   }
   main .titleWrapper {
     padding: 3rem 2rem 4rem 3rem !important;
@@ -296,5 +298,39 @@ nav .button {
   }
   main .imgContainer .imgWrapper .img {
     min-height: 100% !important;
+  }
+  main .contentContainer {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    border-bottom: 2px solid black;
+    border-right: none !important;
+  }
+  main .contentContainer .buttonContainer {
+    display: none;
+  }
+  main .contentContainer .imgWrapper {
+    flex: 1;
+  }
+  main .contentContainer .imgWrapper .img {
+    min-height: 100% !important;
+    border: none !important;
+  }
+  main .contentContainer .contentWrapper {
+    flex: 3;
+    padding: 2rem 3rem;
+    font-family: "Lemon/Milk light ", sans-serif;
+    font-size: 1.5rem;
+  }
+  main .contentContainer .contentWrapper p {
+    text-align: left !important;
+  }
+  main .trendingWrapper {
+    border-top: none !important;
+  }
+  main .trendingWrapper .trending {
+    margin: 0 !important;
+    border-left: none !important;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
