@@ -71,15 +71,15 @@ body nav .burgerWrapper label > div:nth-child(3) div:nth-child(2) {
 }
 body nav .burgerWrapper ol {
   z-index: -1;
-  background-color: rgb(228, 33, 33);
+  background-color: none;
   display: flex;
   position: absolute;
   flex-direction: column;
   right: -2rem;
   padding: 20px 10px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px none;
   margin: 0;
-  width: 100vw;
+  width: 100vh;
   list-style: none;
   transition: 0.5s;
   top: -100vh;
@@ -205,4 +205,24 @@ body main .trendingWrapper .trending {
   margin: 2.7rem;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
+}
+
+@media (min-width: 1280px) {
+  nav {
+    padding: 0 !important;
+  }
+  nav .burgerWrapper {
+    border: 5px dashed rgb(248, 248, 248);
+  }
+  nav .burgerWrapper ol {
+    top: 0 !important;
+    position: relative !important;
+    z-index: 0 !important;
+    width: auto !important;
+    right: auto !important;
+    flex-direction: row !important;
+  }
+  nav .burgerWrapper label {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
