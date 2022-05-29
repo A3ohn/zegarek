@@ -235,9 +235,12 @@ main {
         border-bottom:$border;
         .trending{
             background-color: yellow;
-            margin:$globalPadding;
+            margin:0 $globalPadding;
             border-left: $border;
             border-right:$border;
+            padding: 4rem 0;
+            display:flex;
+            justify-content: center;
                 }
 
         }
@@ -257,8 +260,6 @@ nav{
                 width:auto !important;
                 right:auto !important;
                 flex-direction: row !important;
-                
-                
             }
             label{
                 display:none;
