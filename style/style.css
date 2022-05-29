@@ -259,7 +259,12 @@ nav .button {
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 0 3rem;
+    margin: 0 6rem;
+  }
+  main .titleWrapper {
+    padding: 3rem 2rem 4rem 3rem !important;
+    margin: 0 !important;
+    border-bottom: 2px solid black;
   }
   main .titleWrapper h2 {
     font-size: 3em !important;
@@ -273,5 +278,23 @@ nav .button {
   }
   main .titleWrapper button {
     display: flex !important;
+    margin: 2rem 0;
+  }
+  main .imgWrapper {
+    height: 100%;
+    margin: 0 !important;
+  }
+  main .imgWrapper .img {
+    min-height: 100% !important;
+  }
+  main .imgContainer {
+    border: none !important;
+  }
+  main .imgContainer .imgWrapper {
+    height: 100%;
+    margin: 0 !important;
+  }
+  main .imgContainer .imgWrapper .img {
+    min-height: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */

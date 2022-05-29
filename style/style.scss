@@ -298,8 +298,11 @@ nav{
 main{
     display:grid;
     grid-template-columns: 2fr 1fr;
-    margin:0 3rem;
+    margin:0 6rem;
     .titleWrapper{
+        padding: 3rem 2rem 4rem 3rem !important;
+        margin:0 !important;
+        border-bottom:$border;
         h2{
             font-size:3em !important;
             img{
@@ -312,6 +315,24 @@ main{
         }
         button{
             display:flex !important;
+            margin: 2rem 0;
+        }
+    }
+    .imgWrapper{
+        height: 100%;
+        margin:0 !important;
+        .img{
+            min-height:100% !important;
+        }
+    }
+    .imgContainer{
+        border:none !important;
+        .imgWrapper{
+            height:100%;
+            margin:0 !important;
+            .img{
+                min-height:100% !important;
+            }
         }
     }
 }
